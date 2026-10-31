@@ -16,13 +16,16 @@ it runs on, a log that survives the step that failed.
 
 ## Currently
 
+- **llama_index** — [#23854](https://github.com/run-llama/llama_index/pull/23854): `FunctionTool.from_defaults` infers a name for callables without `__name__` (functools.partial, callable objects).
+- **Soup** — [#2389](https://github.com/MakazhanAlpamys/Soup/pull/2389): `soup train --resume` names the path it searched when it finds no checkpoint.
+- **Soup** — [#2395](https://github.com/MakazhanAlpamys/Soup/pull/2395): Lambda launch response loss recovery — unique per-launch name for reconciliation, definite vs ambiguous failure handling, CRITICAL warning on unconfirmed cleanup.
+- **Soup** — [#2397](https://github.com/MakazhanAlpamys/Soup/pull/2397): Pairwise judge parser fix — explicit verdict patterns (Answer:, Winner:, Better:, etc.) replace naive first-character fallback; rejects ambiguous text like `Answer: B` / `Better: A` / `Banana`.
 - **Robot Framework** — [#5831](https://github.com/robotframework/robotframework/pull/5831): `--metadata` for Libdoc and `@library(metadata=...)`; design approved, queued for RF 7.6.
 - **concurrently** — [#637](https://github.com/open-cli-tools/concurrently/pull/637): `--total-restart-tries` to cap the restarts shared by all commands.
-- **Soup** — [#2389](https://github.com/MakazhanAlpamys/Soup/pull/2389): `soup train --resume` names the path it searched when it finds no checkpoint.
 
 ## Numbers
 
 - 3 merged pull requests (Soup, Oct 2026)
-- 3 open pull requests across Soup, Robot Framework, and concurrently
+- 6 open pull requests across llama_index, Soup, Robot Framework, and concurrently
 
 Open to pairing on Python/TypeScript dev-tool issues.
